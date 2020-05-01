@@ -1,6 +1,7 @@
 *, h1, h2, h3, h4, h5, h6, p, ul, li {
   margin: unset;
   padding: unset;
+  font-family: "Quicksand";
 }
 
 .fullcontain {
@@ -8,11 +9,90 @@
   margin-left: 5%;
 }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 20px;
+}
+
+.nav__burger {
+  cursor: pointer;
+  width: 75px;
+  height: 45px;
+  background-color: #FF6584;
+  border-radius: 0 25px 0 25px;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  position: fixed;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  z-index: 3;
+}
+
+.nav__burger-plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.nav-active {
+  width: 90%;
+  height: 90vh;
+}
+
+.plus-active {
+  top: 20px;
+  right: 20px;
+}
+
+header {
+  margin-top: 85px;
+}
+
+.header__margin {
+  margin-bottom: 25px;
+}
+
+.header__para {
+  margin: 35px 0 0 0;
+  line-height: 22px;
+  word-spacing: 3px;
+}
+
+.myname {
+  margin: 10px 0;
+}
+
+.section__margin {
+  margin-bottom: 10%;
+}
+
+.section__para {
+  width: 80%;
+  margin-left: 10%;
+  line-height: 22px;
+  word-spacing: 3px;
+}
+
+section {
+  padding: 15% 0;
+  margin: 15% 0;
+}
+
 .logo__box {
   width: 100px;
   height: 55px;
   background-color: #6C63FF;
   border-radius: 0 25px 0 25px;
+  position: relative;
 }
 
 .logo__box::before {
@@ -23,12 +103,36 @@
   border: 1px solid black;
   border-radius: 0 25px 0 25px;
   display: block;
-  margin: 10px 0 0 10px;
+  top: -10px;
+  left: 10px;
+  z-index: -1;
+  position: absolute;
 }
 
 .portfolio {
-  background-color: gray;
+  background-color: #F5F5F5;
   width: 100%;
+  border-radius: 50px 0 50px 0;
+  text-align: center;
+  position: relative;
+}
+
+.portfolio::before {
+  content: "";
+  display: block;
+  background-color: transparent;
+  position: absolute;
+  border: 1px solid black;
+  left: 25px;
+  top: 25px;
+  height: -webkit-fill-available;
+  width: 100%;
+  z-index: -1;
+  border-radius: 50px 0 50px 0;
+}
+
+.portfolio__gallery-margin {
+  margin-bottom: 50px;
 }
 
 .portfolio__gallery-tile {
@@ -40,15 +144,89 @@
 
 .aboutme {
   background-color: #6C63FF;
+  color: white;
   width: 100%;
+  border-radius: 0 50px 0 50px;
+  text-align: center;
+  position: relative;
+}
+
+.aboutme::before {
+  content: "";
+  display: block;
+  background-color: transparent;
+  position: absolute;
+  border: 1px solid black;
+  left: 25px;
+  top: 25px;
+  height: -webkit-fill-available;
+  width: 100%;
+  z-index: -1;
+  border-radius: 0 50px 0 50px;
+}
+
+.aboutme__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .aboutme__skills-tile {
-  width: 80%;
-  padding-top: 25%;
+  width: 40%;
+  padding-top: 15%;
   border: 1px solid white;
-  margin: 10px 0 10px 10%;
   border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.aboutme__skills-tile div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+footer {
+  text-align: center;
+}
+
+.smile {
+  width: 20px;
+}
+
+.footer__img {
+  width: 100px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.contactme {
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+.designedby {
+  background-color: #6C63FF;
+  padding: 10px 20px;
+  display: inline-block;
+  color: white;
+  border-radius: 25px 0 25px 0;
+  font-size: .75rem;
+}
+
+.designedby__text {
+  vertical-align: middle;
+  margin-top: 5px;
 }
 
 /**MISC**/
@@ -56,6 +234,14 @@
   width: 100%;
   height: 1px;
   background-color: #ccc;
-  margin: 10px 0 10px 0;
+  margin: 60px 0 60px 0;
+}
+
+.color-dot {
+  color: #FF6584;
+}
+
+.color-purple {
+  color: #6C63FF;
 }
 /*# sourceMappingURL=main.css.map */

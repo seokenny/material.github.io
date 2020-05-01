@@ -3,22 +3,28 @@
 
 <head>
     <title>kennyseo.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
     <div class="fullcontain">
-        <nav></nav>
+        <nav>
+            <div class="nav__burger">
+                <div class="nav__burger-plus">+</div>
+            </div>
+        </nav>
 
         <header>
             <div class="logo">
                 <div class="logo__box logo__box-1"></div>
             </div>
             <div class="header__text">
-                <h1>kenny seo.</h1>
-                <h3>front end web developer // designer</h3>
-                <p>I am a Front End Web Developer and Designer who lives in Queens, New York. I graduated from Queens College with a degree in Graphic Design. In my down time, I love coding, giving my dog attention, playing board games, and listening to lofi music. Also a huge fan of Smash Bros!</p>
+                <h1 class="myname">kenny seo<span class="color-dot">.</span></h1>
+                <h3 class="sub__header">front end web developer // designer</h3>
+                <p class="header__para">I am a <span class="color-purple">Front End Web Developer</span> and <span class="color-purple">Designer</span> who lives in Queens, New York. I graduated from Queens College with a degree in Graphic Design. In my down time, I love coding, giving my dog attention, playing board games, and listening to lofi music. Also a huge fan of Smash Bros!</p>
             </div>
         </header>
         
@@ -28,39 +34,85 @@
     
             <!--portfolio-->
             <section class="portfolio">
-                <h1>portfolio.</h1>
-                <p>from work experiences to projects for self satisfaction and personal usage, here are all the stuff I’ve worked on.</p>
+                <div class="section__margin">
+                    <h1 class="header__margin">portfolio<span class="color-dot">.</span></h1>
+                    <p class="section__para">from work experiences to projects for self satisfaction and personal usage, here are all the stuff I’ve worked on.</p>
+                </div>
                 <div class="portfolio__gallery">
-                    <div class="portfolio__gallery-tile"></div>
-                    <div class="portfolio__gallery-tile"></div>
-                    <div class="portfolio__gallery-tile"></div>
-                    <div class="portfolio__gallery-tile"></div>
+                    <div class="portfolio__gallery-margin">
+                        <div class="portfolio__gallery-tile"></div>
+                        <p>HealCo - UX/UI Developer</p>
+                    </div>
+                    <div class="portfolio__gallery-margin">
+                        <div class="portfolio__gallery-tile"></div>
+                        <p>Rugs USA - Front End Web Developer</p>
+                    </div>
+                    <div class="portfolio__gallery-margin">
+                        <div class="portfolio__gallery-tile"></div>
+                        <p>Fuyu Ramen</p>
+                    </div>
+                    <div class="portfolio__gallery-margin">
+                        <div class="portfolio__gallery-tile"></div>
+                        <p>Konditori</p>
+                    </div>
                 </div>
             </section>
     
             <!--about-->
             <section class="aboutme">
-                <h1>about me.</h1>
-                <p>I am a Front End Web Developer and Designer who lives in Queens, New York. I graduated from Queens College with a degree in Graphic Design. In my down time, I love coding, giving my dog attention, playing board games, and listening to lofi music. Also a huge fan of Smash Bros!</p>
+                <div class="section__margin">
+                    <h1 class="header__margin">about me<span class="color-dot">.</span></h1>
+                    <p class="section__para">I am a Front End Web Developer and Designer who lives in Queens, New York. I graduated from Queens College with a degree in Graphic Design. In my down time, I love coding, giving my dog attention, playing board games, and listening to lofi music. Also a huge fan of Smash Bros!</p>
+                </div>
                 <div class="aboutme__skills">
-                    <div class="aboutme__skills-tile"></div>
-                    <div class="aboutme__skills-tile"></div>
-                    <div class="aboutme__skills-tile"></div>
-                    <div class="aboutme__skills-tile"></div>
+                    <div class="aboutme__skills-tile">
+                        <div>HTML</div>
+                    </div>
+                    <div class="aboutme__skills-tile">
+                        <div>CSS</div>
+                    </div>
+                    <div class="aboutme__skills-tile">
+                        <div>SCSS</div>
+                    </div>
+                    <div class="aboutme__skills-tile">
+                        <div>JavaScript</div>
+                    </div>
+                    <div class="aboutme__skills-tile">
+                        <div>jQuery</div>
+                    </div>
+                    <div class="aboutme__skills-tile">
+                        <div>React</div>
+                    </div>
+                    <div class="aboutme__skills-tile">
+                        <div>Photoshop</div>
+                    </div>
+                    <div class="aboutme__skills-tile">
+                        <div>Illustrator</div>
+                    </div>
+                    <div class="aboutme__skills-tile">
+                        <div>Figma</div>
+                    </div>
+                    <div class="aboutme__skills-tile">
+                        <div>Sketch</div>
+                    </div>
                 </div>
             </section>
 
-            <div class="divider"></div>
-
         </main>
 
+        <div class="divider"></div>
+        
         <!--footer-->
         <footer>
-            <h1>contact me at seo.kenny94@gmail.com</h1>
+            <h2 class="contactme">contact me at <br/><span class="myemail">seo.kenny94@gmail.com</span></h2>
+            <div class="designedby"><img class="smile" src="images/emoticons.svg"><div class="designedby__text">designed and created by kennyseo.</div></div>
+            <img class="footer__img" src="images/stand.svg">
         </footer>
 
     </div>
 
 </body>
+
+<script src="js/main.js"></script>
 
 </html>
