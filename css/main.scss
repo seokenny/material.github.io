@@ -1,9 +1,19 @@
 @import "variables";
 
+
+
 *, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: unset;
     padding: unset;
     font-family: "Quicksand";
+}
+
+body {
+    overflow-x: hidden;
+}
+.parallax {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .fullcontain {
@@ -15,6 +25,25 @@ nav {
     display: flex;
     justify-content: flex-end;
     padding-top: 20px;
+}
+
+.nav__list {
+    list-style-type: none;
+    text-align: right;
+    margin-right: -50px;
+    animation: fadeInRight 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 550ms;
+    opacity: 0;
+    & li {
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+}
+
+.fadeInRight {
+    animation: fadeInRight 1s ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .nav__burger {
@@ -38,6 +67,10 @@ nav {
     }
 }
 
+.nav__desktop {
+    display: none;
+}
+
 .nav-active {
     width: 90%;
     height: 90vh;
@@ -56,9 +89,15 @@ header {
     &__margin {
         margin-bottom: 25px;
     }
+    &__text {
+        margin-left: -50px;
+        opacity: 0;
+        animation: fadeInLeft 1s ease-in-out;
+        animation-fill-mode: forwards;
+    }
     &__para {
         margin: 35px 0 0 0;
-        line-height: 22px;
+        line-height: 30px;
         word-spacing: 3px;
     }
 }
@@ -74,14 +113,14 @@ header {
     &__para {
         width: 80%;
         margin-left: 10%;
-        line-height: 22px;
+        line-height: 30px;
         word-spacing: 3px;
     }
 }
 
 section {
-    padding: 15% 0;
-    margin: 15% 0;
+    padding: 100px 0;
+    margin: 100px 0;
 }
 
 .logo {
@@ -129,14 +168,32 @@ section {
     &__gallery {
         &-margin {
             margin-bottom: 50px;
+            display: block;
         }
         &-tile {
             width: 80%;
             margin: 10px 0 10px 10%;
             padding-top: 80%;
             background-color: white;
+            position: relative;
         }
     }
+}
+
+
+.button_box {
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    margin-left: 15px;
+    cursor: pointer;
 }
 
 .aboutme {
@@ -146,6 +203,7 @@ section {
     border-radius: $left-border-0-large;
     text-align: center;
     position: relative;
+    text-align: center;
     &::before {
         content: "";
         display: block;
@@ -215,6 +273,10 @@ footer {
     }
 }
 
+.myemail {
+    display: block;
+}
+
 /**MISC**/
 .divider {
     width: 100%;
@@ -231,4 +293,96 @@ footer {
     &-purple {
         color: $default-purple;
     }
+    &-pink {
+        color: $default-pink;
+    }
+}
+
+.lookaround {
+    margin-top: 22px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@import "queries";
+@import "animation";
+
+
+.purple-circle {
+    background-color: $default-purple;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.big-purple {
+    z-index: -2;
+    position: absolute;
+    left: -200px;
+    width: 300px;
+    height: 300px;
+    background-color: $dark-purple;
+    border-radius: 100%;
+    top: 25%;
+}
+
+.small-purple {
+    z-index: -2;
+    position: absolute;
+    right: -125px;
+    width: 175px;
+    height: 175px;
+    background-color: $dark-purple;
+    border-radius: 100%;
+    top: 25%;
+}
+
+.small-pink {
+    z-index: 5;
+    position: absolute;
+    right: -135px;
+    width: 175px;
+    height: 175px;
+    background-color: $default-pink;
+    border-radius: 100%;
+    top: 75%;
+}
+
+.medium-pink {
+    z-index: -2;
+    position: absolute;
+    left: -40px;
+    width: 220px;
+    height: 220px;
+    background-color: $default-pink;
+    border-radius: 100%;
+    top: 100%;
+}
+
+.medium-circle, .med-circle {
+    z-index: -2;
+    position: absolute;
+    right: -150px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 1px solid black;
+    top: 40%;
+}
+
+.med-circle {
+    top: 25%;
+}
+
+.large-circle {
+    z-index: 3;
+    position: absolute;
+    left: -250px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 1px solid black;
+    top: 90%;
 }

@@ -10,13 +10,24 @@
 </head>
 <body>
 
+    <div class="parallax">
     <div class="fullcontain">
         <nav>
             <div class="nav__burger">
                 <div class="nav__burger-plus">+</div>
             </div>
+            <div class="nav__desktop">
+                <ul class="nav__list bold">
+                    <li>portfolio</li>
+                    <li>about</li>
+                    <li>contact</li>
+                    <li>github</li>
+                </ul>
+            </div>
         </nav>
-
+        <!--Parallax-->
+        
+        
         <header>
             <div class="logo">
                 <div class="logo__box logo__box-1"></div>
@@ -29,9 +40,10 @@
         </header>
         
         <div class="divider"></div>
-    
+
+        
+
         <main class="content">
-    
             <!--portfolio-->
             <section class="portfolio">
                 <div class="section__margin">
@@ -40,23 +52,44 @@
                 </div>
                 <div class="portfolio__gallery">
                     <div class="portfolio__gallery-margin">
-                        <div class="portfolio__gallery-tile"></div>
+                        <div class="portfolio__gallery-tile">
+                        </div>
                         <p>HealCo - UX/UI Developer</p>
-                    </div>
-                    <div class="portfolio__gallery-margin">
+                    </div><div class="portfolio__gallery-margin">
                         <div class="portfolio__gallery-tile"></div>
                         <p>Rugs USA - Front End Web Developer</p>
-                    </div>
-                    <div class="portfolio__gallery-margin">
+                    </div><div class="portfolio__gallery-margin">
                         <div class="portfolio__gallery-tile"></div>
                         <p>Fuyu Ramen</p>
-                    </div>
-                    <div class="portfolio__gallery-margin">
+                    </div><div class="portfolio__gallery-margin">
                         <div class="portfolio__gallery-tile"></div>
                         <p>Konditori</p>
+                    </div><div class="portfolio__gallery-margin">
+                        <div class="portfolio__gallery-tile"></div>
+                        <p>Mixhour - Music Playlist Finder</p>
+                    </div><div class="portfolio__gallery-margin">
+                        <div class="portfolio__gallery-tile"></div>
+                        <p>WeatherDS - Weather Finder</p>
+                    </div><div class="portfolio__gallery-margin">
+                        <div class="portfolio__gallery-tile"></div>
+                        <p>Tisplitter - Tip Splitter</p>
+                    </div><div class="portfolio__gallery-margin">
+                        <div class="portfolio__gallery-tile"></div>
+                        <p>My Old Portfolio</p>
                     </div>
+                    <!--circles-->
+                    <div class="lax big-purple" data-lax-preset="eager-1000"></div>
+                    <div class="lax small-pink" data-lax-preset="eager-300"></div>
+                    <div class="lax medium-circle" data-lax-preset="eager-500"></div>
+                    <div class="lax large-circle" data-lax-preset="eager-750"></div>
                 </div>
             </section>
+
+            <!-- <p class="lax test" data-lax-preset="lazy-200">
+                I fade out as the page scrolls down and
+                I'm gone when the page has scrolled the view port height!
+            </p> -->
+            
     
             <!--about-->
             <section class="aboutme">
@@ -96,23 +129,29 @@
                         <div>Sketch</div>
                     </div>
                 </div>
+                <div class="lax small-purple" data-lax-preset="eager-1000"></div>
+                <div class="lax med-circle" data-lax-preset="eager-800"></div>
+                <div class="lax medium-pink" data-lax-preset="eager-300"></div>
             </section>
 
         </main>
-
-        <div class="divider"></div>
         
+        <div class="divider"></div>
+
         <!--footer-->
         <footer>
-            <h2 class="contactme">contact me at <br/><span class="myemail">seo.kenny94@gmail.com</span></h2>
+            <h2 class="contactme">contact me at <span class="myemail">&gt; seo.kenny94@gmail.com &lt;</span></h2>
             <div class="designedby"><img class="smile" src="images/emoticons.svg"><div class="designedby__text">designed and created by kennyseo.</div></div>
             <img class="footer__img" src="images/stand.svg">
         </footer>
 
     </div>
+</div>
 
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="js/main.js"></script>
 
 </html>

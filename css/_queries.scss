@@ -1,0 +1,61 @@
+@media only screen and (min-width: 550px) {
+    .header__para {
+        width: 480px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .portfolio__gallery-margin {
+        display: inline-block !important;
+        width: 45%;
+    }
+    .myemail {
+        display: inline-block;
+    }
+    footer {
+        text-align: right;
+    }
+    .contactme {
+        text-align: right;
+    }
+    .smile {
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 810px) {
+    .section__para {
+        width: 573px;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .portfolio__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .portfolio__gallery-margin {
+        width: 33.333333%;
+    }
+    .nav__burger {
+        display: none;
+    }
+    nav {
+        float: right;
+    }
+    .nav__desktop {
+        display: block !important;
+    }
+}
+
+@media only screen and (min-width: 1270px) {
+    .fullcontain {
+        width: 1230px !important;
+        margin: auto !important;
+    }
+}
