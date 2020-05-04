@@ -31,19 +31,44 @@ nav {
 .nav__list {
   list-style-type: none;
   text-align: right;
-  margin-right: -50px;
+  margin-top: -25px;
   -webkit-animation: fadeInRight 1s ease-in-out;
           animation: fadeInRight 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 550ms;
           animation-delay: 550ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   opacity: 0;
 }
 
 .nav__list li {
   margin-bottom: 20px;
+  cursor: pointer;
   letter-spacing: 1px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  font-weight: 500;
+}
+
+.nav__list li:hover {
+  margin-right: 5px;
+  color: #6C63FF;
+}
+
+.nav__list li:hover .larr {
+  opacity: 1;
+  margin-left: unset;
+}
+
+.larr {
+  opacity: 0;
+  margin-left: 10px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: #6C63FF;
 }
 
 .fadeInRight {
@@ -79,6 +104,11 @@ nav {
 
 .nav__desktop {
   display: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: fixed;
+  top: 30px;
+  z-index: 5000;
 }
 
 .nav-active {
@@ -106,6 +136,7 @@ header {
           animation: fadeInLeft 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  display: inline-block;
 }
 
 .header__para {
@@ -116,10 +147,6 @@ header {
 
 .myname {
   margin: 10px 0;
-}
-
-.section__margin {
-  margin-bottom: 10%;
 }
 
 .section__para {
@@ -181,6 +208,7 @@ section {
 .portfolio__gallery-margin {
   margin-bottom: 50px;
   display: block;
+  z-index: 2;
 }
 
 .portfolio__gallery-tile {
@@ -230,17 +258,6 @@ section {
   width: 100%;
   z-index: -1;
   border-radius: 0 50px 0 50px;
-}
-
-.aboutme__skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 .aboutme__skills-tile {

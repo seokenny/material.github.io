@@ -30,15 +30,34 @@ nav {
 .nav__list {
     list-style-type: none;
     text-align: right;
-    margin-right: -50px;
+    margin-top: -25px;
     animation: fadeInRight 1s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 550ms;
+    display: flex;
     opacity: 0;
     & li {
         margin-bottom: 20px;
+        cursor: pointer;
         letter-spacing: 1px;
+        transition: all .2s ease-in-out;
+        font-weight: 500;
+        &:hover {
+            margin-right: 5px;
+            color: $default-purple;
+            & .larr {
+                opacity: 1;
+                margin-left: unset;
+            }
+        }
     }
+}
+
+.larr {
+    opacity: 0;
+    margin-left: 10px;
+    transition: all .2s ease-in-out;
+    color: $default-purple;
 }
 
 .fadeInRight {
@@ -69,6 +88,10 @@ nav {
 
 .nav__desktop {
     display: none;
+    transition: all .3s ease-in-out;
+    position: fixed;
+    top: 30px;
+    z-index: 5000;
 }
 
 .nav-active {
@@ -94,6 +117,7 @@ header {
         opacity: 0;
         animation: fadeInLeft 1s ease-in-out;
         animation-fill-mode: forwards;
+        display: inline-block;
     }
     &__para {
         margin: 35px 0 0 0;
@@ -108,7 +132,7 @@ header {
 
 .section {
     &__margin {
-        margin-bottom: 10%;
+        // margin-bottom: 10%;
     }
     &__para {
         width: 80%;
@@ -169,6 +193,7 @@ section {
         &-margin {
             margin-bottom: 50px;
             display: block;
+            z-index: 2;
         }
         &-tile {
             width: 80%;
@@ -218,9 +243,9 @@ section {
         border-radius: $left-border-0-large;
     }
     &__skills {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-evenly;
         &-tile {
             width: 40%;
             padding-top: 15%;
