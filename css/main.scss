@@ -198,9 +198,12 @@ section {
         &-tile {
             width: 80%;
             margin: 10px 0 10px 10%;
-            padding-top: 80%;
-            background-color: white;
             position: relative;
+            & img {
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
         }
     }
 }
