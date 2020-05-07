@@ -27,6 +27,11 @@ nav {
     padding-top: 20px;
 }
 
+.nav__github a {
+    text-decoration: none;
+    color: unset;
+}
+
 .nav__list {
     list-style-type: none;
     text-align: right;
@@ -42,9 +47,9 @@ nav {
         letter-spacing: 1px;
         transition: all .2s ease-in-out;
         font-weight: 500;
+        margin: 0 0 20px 25px;
         &:hover {
-            margin-right: 5px;
-            color: $default-purple;
+            color: $default-pink;
             & .larr {
                 opacity: 1;
                 margin-left: unset;
@@ -57,7 +62,7 @@ nav {
     opacity: 0;
     margin-left: 10px;
     transition: all .2s ease-in-out;
-    color: $default-purple;
+    color: $default-pink;
 }
 
 .fadeInRight {
@@ -67,15 +72,14 @@ nav {
 
 .nav__burger {
     cursor: pointer;
-    width: 75px;
-    height: 45px;
-    background-color: $default-pink;
-    border-radius: $left-border-0;
-    position: relative;
     color: white;
+    position: relative;
     font-weight: bold;
     font-size: 1.25rem;
-    position: fixed;
+    position: fixed;  
+    background-color: $default-pink;
+    height: 50px;
+    width: 50px;
     transition: all .3s ease-in-out;
     z-index: 3;
     &-plus {
@@ -87,7 +91,6 @@ nav {
 }
 
 .nav__desktop {
-    display: none;
     transition: all .3s ease-in-out;
     position: fixed;
     top: 30px;
@@ -193,7 +196,7 @@ section {
     }
     &__gallery {
         &-margin {
-            margin-top: 90px;
+            margin-top: 60px;
             display: block;
             z-index: 2;
             width: 90%;
@@ -299,6 +302,7 @@ section {
 
 footer {
     text-align: center;
+    padding-bottom: 70px;
 }
 
 .smile {
@@ -328,6 +332,15 @@ footer {
     &__text {
         vertical-align: middle;
         margin-top: 5px;
+    }
+}
+
+.contactme a {
+    color: unset;
+    transition: all .2s ease-in-out;
+    color: $default-pink;
+    &:hover {
+        color: $default-purple;
     }
 }
 
@@ -497,3 +510,6 @@ footer {
     }
 }
 
+.mailto {
+    text-decoration: none;
+}

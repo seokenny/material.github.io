@@ -15,6 +15,7 @@
         flex-wrap: wrap;
         width: 90%;
         margin-left: 5%;
+        margin-top: 40px;
     }
     .myemail {
         display: inline-block;
@@ -39,6 +40,22 @@
     }
 }
 
+@media only screen and (min-width: 850px) {
+    .portfolio__gallery-margin {
+        width: 46%;
+        margin: 2%;
+    }
+    .nav__burger {
+        display: none;
+    }
+    nav {
+        float: right;
+    }
+    .nav__desktop {
+        display: block !important;
+    }
+}
+
 @media only screen and (min-width: 1024px) {
     .portfolio__gallery {
         display: flex;
@@ -49,15 +66,7 @@
     // .portfolio__gallery-margin {
     //     width: 33.333333%;
     // }
-    .nav__burger {
-        display: none;
-    }
-    nav {
-        float: right;
-    }
-    .nav__desktop {
-        display: block !important;
-    }
+
 }
 
 @media only screen and (min-width: 1270px) {

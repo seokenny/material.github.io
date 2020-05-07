@@ -28,6 +28,11 @@ nav {
   padding-top: 20px;
 }
 
+.nav__github a {
+  text-decoration: none;
+  color: unset;
+}
+
 .nav__list {
   list-style-type: none;
   text-align: right;
@@ -51,11 +56,11 @@ nav {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   font-weight: 500;
+  margin: 0 0 20px 25px;
 }
 
 .nav__list li:hover {
-  margin-right: 5px;
-  color: #6C63FF;
+  color: #FF6584;
 }
 
 .nav__list li:hover .larr {
@@ -68,7 +73,7 @@ nav {
   margin-left: 10px;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-  color: #6C63FF;
+  color: #FF6584;
 }
 
 .fadeInRight {
@@ -80,15 +85,14 @@ nav {
 
 .nav__burger {
   cursor: pointer;
-  width: 75px;
-  height: 45px;
-  background-color: #FF6584;
-  border-radius: 0 25px 0 25px;
-  position: relative;
   color: white;
+  position: relative;
   font-weight: bold;
   font-size: 1.25rem;
   position: fixed;
+  background-color: #FF6584;
+  height: 50px;
+  width: 50px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   z-index: 3;
@@ -103,7 +107,6 @@ nav {
 }
 
 .nav__desktop {
-  display: none;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   position: fixed;
@@ -208,7 +211,7 @@ section {
 }
 
 .portfolio__gallery-margin {
-  margin-top: 90px;
+  margin-top: 60px;
   display: block;
   z-index: 2;
   width: 90%;
@@ -319,6 +322,7 @@ section {
 
 footer {
   text-align: center;
+  padding-bottom: 70px;
 }
 
 .smile {
@@ -350,6 +354,17 @@ footer {
 .designedby__text {
   vertical-align: middle;
   margin-top: 5px;
+}
+
+.contactme a {
+  color: unset;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: #FF6584;
+}
+
+.contactme a:hover {
+  color: #6C63FF;
 }
 
 .myemail {
@@ -402,6 +417,7 @@ footer {
         flex-wrap: wrap;
     width: 90%;
     margin-left: 5%;
+    margin-top: 40px;
   }
   .myemail {
     display: inline-block;
@@ -426,15 +442,10 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  .portfolio__gallery {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 90%;
-    margin-left: 5%;
+@media only screen and (min-width: 850px) {
+  .portfolio__gallery-margin {
+    width: 46%;
+    margin: 2%;
   }
   .nav__burger {
     display: none;
@@ -444,6 +455,18 @@ footer {
   }
   .nav__desktop {
     display: block !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .portfolio__gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
   }
 }
 
@@ -629,5 +652,9 @@ footer {
 
 .port__btn:hover .hov__text {
   opacity: 1;
+}
+
+.mailto {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
