@@ -7,7 +7,14 @@
 @media only screen and (min-width: 768px) {
     .portfolio__gallery-margin {
         display: inline-block !important;
-        width: 45%;
+        // width: 48%;
+        // margin: 1%;
+    }
+    .portfolio__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-left: 5%;
     }
     .myemail {
         display: inline-block;
@@ -39,9 +46,9 @@
         width: 90%;
         margin-left: 5%;
     }
-    .portfolio__gallery-margin {
-        width: 33.333333%;
-    }
+    // .portfolio__gallery-margin {
+    //     width: 33.333333%;
+    // }
     .nav__burger {
         display: none;
     }
