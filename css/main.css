@@ -204,7 +204,7 @@ section {
   border: 1px solid black;
   left: 25px;
   top: 25px;
-  height: -webkit-fill-available;
+  height: 100%;
   width: 100%;
   z-index: -1;
   border-radius: 50px 0 50px 0;
@@ -296,7 +296,7 @@ section {
   border: 1px solid black;
   left: 25px;
   top: 25px;
-  height: -webkit-fill-available;
+  height: 100%;
   width: 100%;
   z-index: -1;
   border-radius: 0 50px 0 50px;
